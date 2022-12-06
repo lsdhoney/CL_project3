@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madame Machina's Torture Chamber</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    
+    <audio id="bgm" src="../assets/torture_bgm.mp3"></audio>
+    <div>
+        <a href="#" id="on" onClick="playMyAudio()">sound on</a>
+        <p id="line">*</p>
+        <a href="#" id="off" onClick="pauseMyAudio()">off</a>
+    </div>
+   
+    <script>
+        function playMyAudio() {
+            document.getElementById("bgm").loop = true;
+            document.getElementById("bgm").play();
+        }
+        function pauseMyAudio() {
+            document.getElementById("bgm").pause();
+        }
+    </script>
+
+    <p id="guide">controls: mouse or trackpad L/R/scroll</p>
+    <canvas class="webgl"></canvas>   
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

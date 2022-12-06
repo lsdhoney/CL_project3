@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'nintendo'; 
+    src: url('assets/Nintendo-DS-BIOS.ttf'); 
+}
+
+@font-face {
+    font-family: 'gothic'; 
+    src: url('assets/GothicPixels.ttf'); 
+}
+
+body {
+    background-color: black;
+    color: white;
+    background-image: url("assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-family: 'gothic';
+	font-size: 20px;
+}
+
+.title2 {
+    font-family: 'nintendo';
+	font-size: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    
+}
+
+.link {
+    color: white;
+    font-family: 'nintendo';
+	font-size: 20px;  
+    margin: 50px; 
+  }
+
+input[type=text] {
+    background-color:black;
+    border: 1px solid white;
+    border-radius: 3px;
+  }
+
+#user_input {
+    color: white;
+    font-family: 'nintendo';
+    font-size: 20px; 
+}
+
+#enter_btn {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-family: 'nintendo';
+    font-size: 20px; 
+}
